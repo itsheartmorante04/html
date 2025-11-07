@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PUP Interactive Map</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div class="map-container">
+        <img src="pup_map.jpg" alt="PUP Campus Map" class="map-image" usemap="#pup-map">
+        <map name="pup-map">
+            <area shape="poly" coords="1041, 565, 1080, 553, 1109, 573, 1066,589, 1041, 565" alt="Pylon" href="#" onclick="openPanel(event)">
+            <area shape="circle" coords="1028, 600, 13" alt="Mural" href="#" onclick="openPanel(event)">
+            <area shape="circle" coords="1043, 538, 11" alt="Visitor's Lounge" href="#" onclick="openPanel(event)">
+            <area shape="poly" coords="1024, 503, 1122, 562, 1186, 540, 1082,486,1024,503" alt="Open Court" href="#" onclick="openPanel(event)">
+            <area shape="poly" coords="931,462,992,503,1064,480,987,436,931,462" alt="Lawn Tennis Court" href="#" onclick="openPanel(event)">
+            <area shape="poly" coords="852,405,906,446,962,427,902,392,852,405" alt="Basketball Court" href="#" onclick="openPanel(event)">
+            <area shape="circle" coords="806, 475, 19" alt="Souvenir Shop" href="#" onclick="openPanel(event)">
+            <area shape="poly" coords="714,431,747,469,783,455,738,421,714,431" alt="Mabini Shrine" href="#" onclick="openPanel(event)">
+            <area shape="rect" coords="639,418,692,443" alt="Mabini Museum" href="#" onclick="openPanel(event)">
+            <area shape="circle" coords="735,373,42" alt="Obelisk" href="#" onclick="openPanel(event)">
+            <area shape="poly" coords="539,417,602,436,647,407,582,391,539,417" alt="11" href="#" onclick="openPanel(event)">
+            <area shape="poly" coords="445,436,430,466,548,460,544,433,445,436" alt="12" href="#" onclick="openPanel(event)">
+            <area shape="circle" coords="299,441,40" alt="13" href="#" onclick="openPanel(event)">
+            <area shape="poly" coords="111,342,117,390,146,414,324,389,353,390,504,422,546,396,542,343,423,314,421,295,424,266,348,262,306,311,111,342" alt="14" href="#" onclick="openPanel(event)">
+            <area shape="circle" coords="79,382,20" alt="15.1" href="#" onclick="openPanel(event)">
+            <area shape="poly" coords="412,463,421,498,508,487,502,468,412,463" alt="15.2" href="#" onclick="openPanel(event)">
+            <area shape="poly" coords="559,455,548,488,689,498,690,467,559,455" alt="16" href="#" onclick="openPanel(event)">
+            <area shape="poly" coords="423,507,776,528,842,548,878,573,883,599,849,650,749,683,504,660,494,668,235,627,234,596,254,556,306,530,366,513,423,507" alt="17" href="#" onclick="openPanel(event)">
+            <area shape="poly" coords="509,666,489,685,500,720,573,722,584,701,578,671" alt="18" href="#" onclick="openPanel(event)">
+            <area shape="poly" coords="409,700,408,733,425,761,469,748,468,713,452,689" alt="19" href="#" onclick="openPanel(event)">
+            <area shape="poly" coords="81,407,129,508,163,503,163,469,120,408" alt="20" href="#" onclick="openPanel(event)">
+            <area shape="poly" coords="423,248,420,255,430,258,434,284,443,281,452,265,449,252" alt="22" href="#" onclick="openPanel(event)">
+            <area shape="poly" coords="457,274,449,289,490,290,493,278" alt="23" href="#" onclick="openPanel(event)">
+            <area shape="poly" coords="516,241,498,275,498,290,562,290,567,252,542,235" alt="24" href="#" onclick="openPanel(event)">
+            <area shape="poly" coords="584, 213,534,232,579,230" alt="25" href="#" onclick="openPanel(event)">
+            <area shape="poly" coords="592,203,585,220,586,247,630,252,634,238,704,243,702,198" alt="26" href="#" onclick="openPanel(event)">
+            <area shape="circle" coords="664, 178, 14" alt="27" href="#" onclick="openPanel(event)">
+            <area shape="circle" coords="720, 198, 14" alt="28" href="#" onclick="openPanel(event)">
+            <area shape="circle" coords="744, 220, 14" alt="29" href="#" onclick="openPanel(event)">
+            <area shape="poly" coords="611,283,610,317,654,328,725,303,802,317,838,312,836,267,821,262,821,239,778,227" alt="30" href="#" onclick="openPanel(event)">
+            <area shape="circle" coords="583, 310, 17 "alt="31"href="#" onclick="openPanel(event)">"
+            <area shape="circle" coords="506, 316, 17" alt="32" href="#" onclick="openPanel(event)">
+            <area shape="poly" coords="773, 365, 644, 386, 552, 375, 568, 342, 607, 323, 690, 336, 749, 331" alt="33 - lagoon" href="#" onclick="openPanel(event)">
+            <area shape="poly" coords="872, 258, 928, 285, 876, 296, 834, 269" alt="34" href="#" onclick="openPanel(event)">
+            <area shape="poly" coords="802, 349, 787, 342, 787, 324, 869, 310, 880, 321, 880, 337" alt="35" href="#" onclick="openPanel(event)">
+            <area shape="poly" coords="877, 341, 880, 316, 931, 307, 945, 313, 950, 333" alt="36 - Tahanan ng Alumni" href="#" onclick="openPanel(event)">
+            <area shape="poly" coords="961, 341, 1012, 366, 999, 378, 999, 391, 986, 395, 905, 351" alt="37 - Pool" href="#" onclick="openPanel(event)">
+            <area shape="poly" coords="1000, 377, 1041, 353, 1088, 349, 1245, 411, 1208, 419, 1160, 445, 1082, 413" alt="38 - Multipurpose Bldg." href="#" onclick="openPanel(event)">
+            <area shape="poly" coords="1301, 498, 1308, 436, 1287, 424, 1303, 419, 1284, 409, 1181, 435, 1175, 441, 1164, 436, 1162, 465, 1182, 474, 1161, 497, 1209, 522" alt="39 - Engineering and Science Research Center" href="#" onclick="openPanel(event)">
+            <area shape="circle" coords="1042, 150, 17" alt="40 - Com Bldg." href="#" onclick="openPanel(event)">
+            <area shape="circle" coords="1054, 120, 14" alt="41 - PUP Theather " href="#" onclick="openPanel(event)">
+            <area shape="circle" coords="1102, 116, 14 " alt="42 - CEA" href="#" onclick="openPanel(event)">
+            <area shape="poly" coords="936, 74, 936, 44, 936, 39, 997, 51, 995, 77" alt="43- Condotel" href="#" onclick="openPanel(event)">
+            <area shape="circle" coords="1158, 128, 20 " alt="44 - NDC TC" href="#" onclick="openPanel(event)">
+            <area shape="circle" coords="1159, 97, 15" alt="45 - NDC CC" href="#" onclick="openPanel(event)">
+            <area shape="poly" coords="1207, 118, 1268, 119, 1256, 98, 1201, 101" alt="46 - Business Processing Office" href="#" onclick="openPanel(event)">
+            <area shape="poly" coords="1230, 56, 1249, 80, 1251, 95, 1231, 90, 1216, 79, 1160, 78, 1166, 60, 1206, 55" alt="47 - IT Bldg." href="#" onclick="openPanel(event)">
+            <area shape="circle" coords="1147, 67, 15" alt="48 - Antique House" href="#" onclick="openPanel(event)">
+            <area shape="poly" coords="1318, 24, 1376, 33, 1369, 24, 1328, 16" alt="49 - Graduate School" href="#" onclick="openPanel(event)">
+            <area shape="poly" coords="1395, 47, 1426, 49, 1428, 23, 1414, 14, 1395, 21" alt="50 - Hasmin Bldg." href="#" onclick="openPanel(event)">
+
+        </map>    
+
+    </div>
+</body>
+
+</html>
